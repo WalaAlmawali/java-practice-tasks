@@ -53,9 +53,12 @@ public class logic1 {
         System.out.println(ex13.in1To10(5,false));*/
 
         // task 14
-        logic1 ex14= new logic1();
-        System.out.println(ex14.old35(15));
+       /* logic1 ex14= new logic1();
+        System.out.println(ex14.old35(15));*/
 
+        // task 15
+        logic1 ex15= new logic1();
+        System.out.println(ex15.teenSum(13,2));
     }
 public boolean cigarParty(int cigars, boolean isWeekend){
 
@@ -203,5 +206,12 @@ public boolean cigarParty(int cigars, boolean isWeekend){
             return true;
         }
         return false;
+    }
+
+    public int teenSum(int a, int b){
+        if((a >= 13 && a <= 19 ) || (b >= 13 && b <= 19 )){
+            return 19;
+        }
+        return a+b;
     }
 }

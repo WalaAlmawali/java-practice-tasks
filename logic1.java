@@ -5,10 +5,12 @@ public class logic1 {
        System.out.println(ex1.cigarParty(70,true));*/
 
         // task 2
-        logic1 ex2= new logic1();
+        /*logic1 ex2= new logic1();
         System.out.println(ex2.caughtSpeeding(86,true));
-
-
+*/
+        // task 3
+        logic1 ex3= new logic1();
+        System.out.println(ex3.love6(1,5));
     }
 public boolean cigarParty(int cigars, boolean isWeekend){
 
@@ -44,6 +46,14 @@ public boolean cigarParty(int cigars, boolean isWeekend){
             return 2;
         }
 
+    }
+
+    public boolean love6(int a, int b){
+        if(a == 6 || b == 6 ||a + b == 6 || Math.abs(a - b) == 6 ){
+            return true;
+        }else {
+            return false;
+        }
     }
 
 }

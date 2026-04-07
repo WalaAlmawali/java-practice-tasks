@@ -41,8 +41,12 @@ public class logic1 {
         System.out.println(ex10.blueTicket(6,1,4));*/
 
         // task 11
-        logic1 ex11= new logic1();
-        System.out.println(ex11.dateFashion(5,5));
+      /*  logic1 ex11= new logic1();
+        System.out.println(ex11.dateFashion(5,5));*/
+
+        // task 12
+        logic1 ex12= new logic1();
+        System.out.println(ex12.sortaSum(10,11));
     }
 public boolean cigarParty(int cigars, boolean isWeekend){
 
@@ -161,6 +165,14 @@ public boolean cigarParty(int cigars, boolean isWeekend){
             return 1;
         }
 
+    }
+
+    public int sortaSum(int a, int b){
+        int sum = a +b;
+        if(sum >= 10 && sum <= 19){
+            return 20;
+        }else {
+            return sum;}
     }
 
 }

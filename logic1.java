@@ -37,8 +37,12 @@ public class logic1 {
         System.out.println(ex9.maxMod5(3,2));*/
 
         // task 10
-        logic1 ex10= new logic1();
-        System.out.println(ex10.blueTicket(6,1,4));
+       /* logic1 ex10= new logic1();
+        System.out.println(ex10.blueTicket(6,1,4));*/
+
+        // task 11
+        logic1 ex11= new logic1();
+        System.out.println(ex11.dateFashion(5,5));
     }
 public boolean cigarParty(int cigars, boolean isWeekend){
 
@@ -146,6 +150,17 @@ public boolean cigarParty(int cigars, boolean isWeekend){
         }else{
             return 0;
         }
+    }
+
+    public int dateFashion(int you, int date){
+        if(you<= 2 || date<= 2){
+            return 0;
+        } else if ((you >= 8 || date>= 8)) {
+            return 2;
+        }else{
+            return 1;
+        }
+
     }
 
 }
